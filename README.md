@@ -4,6 +4,16 @@ Campus IT Help Desk is a Laravel and MySQL web application for reporting and man
 
 This repository is the final project for the Web Programming course.
 
+## Live deployment
+
+The project is deployed on Railway with a managed MySQL database:
+
+- Application: [campus-it-helpdesk-production.up.railway.app](https://campus-it-helpdesk-production.up.railway.app/)
+- Source repository: [github.com/burimhodai/campus-it-helpdesk](https://github.com/burimhodai/campus-it-helpdesk)
+- Environment: Laravel production deployment with HTTPS
+
+The demonstration accounts listed below can be used on the deployed application.
+
 ## Main features
 
 ### User area
@@ -147,9 +157,9 @@ The feature tests cover authentication, access control, creating and editing tic
 
 ## Repository and cloud deployment
 
-The project is ready to be stored in GitHub. The `.env`, installed dependencies, generated assets, logs, and local database are excluded from version control.
+The source code is stored in the private GitHub repository [`burimhodai/campus-it-helpdesk`](https://github.com/burimhodai/campus-it-helpdesk). The `.env`, installed dependencies, generated assets, logs, and local database are excluded from version control.
 
-For an optional public demonstration, Railway can deploy Laravel from a GitHub repository and provide a managed MySQL service. The practical deployment checklist is in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Cloud hosting is optional; the local XAMPP setup is the primary supported demonstration environment.
+The live application is hosted on Railway and uses Railway's managed MySQL service. GitHub changes to the `main` branch trigger a new deployment automatically. The deployment configuration and recovery checklist are in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). The local setup remains available as a backup demonstration environment.
 
 ## Documentation
 
@@ -157,4 +167,3 @@ For an optional public demonstration, Railway can deploy Laravel from a GitHub r
 - [Demonstration script](docs/DEMONSTRATION.md)
 - [Deployment and GitHub guide](docs/DEPLOYMENT.md)
 - [MySQL schema](database/schema/mysql.sql)
-
